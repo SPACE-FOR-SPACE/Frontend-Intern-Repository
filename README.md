@@ -36,7 +36,7 @@ Space 인턴들의 과제가 보여지는 공간입니다!
     ```
 2. **브랜치 생성**:
     ```bash
-    git checkout -b Main-Page/your-name
+    git checkout -b Task1/your-name
     ```
 3. **개발 시작**: WebStorm에서 프로젝트를 열고 과제를 시작하세요.
 4. **변경 사항 커밋**:
