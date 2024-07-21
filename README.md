@@ -32,7 +32,7 @@ Space 인턴들의 과제가 보여지는 공간입니다!
 
 1. **리포지토리 클론**:
     ```bash
-    git clone https://github.com/SPACE-FOR-SPACE/Frontend-Intern-Repository
+    git clone https://github.com/SPACE-FOR-SPACE/SPACE_FE_COPILOT
     ```
 2. **브랜치 생성**:
     ```bash
