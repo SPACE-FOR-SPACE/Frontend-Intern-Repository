@@ -1,0 +1,59 @@
+#sideBar{
+    display: none;
+}
+#mainShort{
+    display: none;
+}
+#vedios{
+    width: 450px;
+    left: 20px;
+}
+#v{
+    width: 450px;
+}
+#thumbnail{
+    width: 450px;
+    height: 260px;
+}
+#box1{
+    right: 900px;
+}
+#serch{
+    width: 300px;
+}
+#bar{
+    left: 70px;
+    display: none;
+}
+#voice{
+    left: 280px;
+}
+#serchButton{
+    position: absolute;
+    left: 230px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 8px;
+}
+#serchButton:hover{
+    background-color: rgb(63, 63, 63);
+}
+#serchButton img{
+    width: 25px;
+}
+#back{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+#categori{
+    left: 20px;
+    overflow-x: auto;
+}
+#titles{
+    width: 380px;
+}
