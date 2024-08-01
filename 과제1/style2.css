@@ -1,0 +1,143 @@
+#videos{
+    width: 1140px;
+    top: 120px;
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+#videos ::-webkit-scrollbar{
+    height: 30px;
+    width: 5px;
+}
+#videos #v{
+    margin-bottom: 50px;
+}
+.thumbnail{
+    width: 370px;
+    height: 230px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.information{
+
+    display: flex;
+    justify-content: space-between;
+}
+.profiles{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 100px;
+}
+.titles{
+    width: 310px;
+    line-height: 20px;
+}
+
+.titles h4{
+    color: white;
+    padding: 5px;
+}
+.titles p{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+}
+.explain{
+    width: 5px;
+    cursor: pointer;
+}
+.explain img{width: 100%;}
+#mainShort{
+    width: 1140px;
+    bottom: -530px;
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    height: 500px;
+}
+#s{
+    margin-bottom: 10px;
+}
+#shortBar{
+    width: 1140px;
+    height: 50px;
+}
+.shortTitle{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    font-size: 18px;
+}
+.shortTitle img{width: 30px;}
+.shortThumbnail{
+    width: 220px;
+    height: 340px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+.shortName{
+    margin: 0 auto;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.shortName img{width: 5px;}
+.shortExplain{
+    color: #999999;
+    width: 200px;
+    margin: 0 auto;
+}
+.shortShow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    overflow: hidden;
+}
+#line{
+    width: 1140px;
+    background-color: #999999;
+    height: 1px;
+    position: absolute;
+    bottom: 20px;
+}
+#line-in{
+    border-radius: 20px;
+    padding: 10px 200px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 350px;
+    bottom: 0;
+    border: 1px solid #999999;
+    cursor: pointer;
+    z-index: 5;
+}
+#line-in2{
+    border-radius: 20px;
+    padding: 10px 200px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 350px;
+    bottom: 0;
+    border: 1px solid #999999;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+}
+.one{display: none;}
+.two{display: none;}
