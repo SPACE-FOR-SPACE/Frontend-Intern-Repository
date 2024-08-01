@@ -18,17 +18,17 @@ document.getElementById("video").addEventListener("mouseleave", function(){
     document.getElementById("subText-video").style.display = "none";
 });
 
-document.getElementById("serchButton").addEventListener("mouseover", function(){
-    document.getElementById("subText-serch").style.display = "block";
+document.getElementById("searchButton").addEventListener("mouseover", function(){
+    document.getElementById("subText-search").style.display = "block";
 });
-document.getElementById("serchButton").addEventListener("mouseleave", function(){
-    document.getElementById("subText-serch").style.display = "none";
+document.getElementById("searchButton").addEventListener("mouseleave", function(){
+    document.getElementById("subText-search").style.display = "none";
 });
-document.getElementById("serchButton").addEventListener("click", function(){
+document.getElementById("searchButton").addEventListener("click", function(){
     document.getElementById("bar").style.display = "block";
     document.getElementById("voice").style.display = "none";
     document.getElementById("box1").style.display = "none";
-    document.getElementById("serchButton").style.display = "none";
+    document.getElementById("searchButton").style.display = "none";
     List.style.display = "none";
     document.getElementById("logo").style.display = "none";
     document.getElementById("back").style.display = "block";
@@ -37,7 +37,7 @@ document.getElementById("back").addEventListener("click", () => {
     document.getElementById("bar").style.display = "none";
     document.getElementById("voice").style.display = "flex";
     document.getElementById("box1").style.display = "flex";
-    document.getElementById("serchButton").style.display = "block";
+    document.getElementById("searchButton").style.display = "block";
     List.style.display = "flex";
     document.getElementById("logo").style.display = "block";
     document.getElementById("back").style.display = "none";
@@ -60,7 +60,7 @@ sideBar.addEventListener("mouseleave", ()=> {
             }, 1000); // 1초 후에 스크롤바 숨기기
         });
 
-const serch = document.getElementById("serch");
+const search = document.getElementById("search");
 
 const line = document.getElementById("line-in");
 line.addEventListener("click", ()=>{

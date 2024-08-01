@@ -1,4 +1,4 @@
-#vedios{
+#videos{
     width: 1300px;
     top: 120px;
     position: absolute;
@@ -11,50 +11,52 @@
     z-index: 1;
     flex-wrap: wrap;
 }
-#vedios ::-webkit-scrollbar{
+#videos ::-webkit-scrollbar{
     height: 30px;
     width: 5px;
 }
-#vedios #v{
+#videos #v{
     margin-bottom: 50px;
 }
 #v{
     width: 300px;
 }
-#thumbnail{
+.thumbnail{
     width: 300px;
     height: 180px;
     background-color: rgb(63, 63, 63);
     border-radius: 20px;
     margin-bottom: 5px;
 }
-#information{
+.information{
+    width: 300px;
     display: flex;
     justify-content: space-between;
 }
-#profiles{
+.profiles{
     width: 30px;
     height: 25px;
     background-color: red;
     border-radius: 100px;
 }
-#titles{
+.titles{
     width: 310px;
     line-height: 20px;
 }
-#titles h4{
+.titles h4{
     color: white;
     padding: 5px;
 }
-#titles p{
+.titles p{
     color: #999999;
     font-size: 14px;
     font-weight: 500;
 }
-#explain{
+.explain{
     width: 5px;
     cursor: pointer;
 }
+.explain img{width: 100%;}
 #mainShort{
     width: 1300px;
     bottom: -530px;
@@ -70,7 +72,7 @@
     width: 1300px;
     height: 50px;
 }
-#shortTitle{
+.shortTitle{
     color: white;
     display: flex;
     justify-content: space-around;
@@ -78,27 +80,29 @@
     width: 100px;
     font-size: 18px;
 }
-#shortThumbnail{
+.shortTitle img{width: 30px;}
+.shortThumbnail{
     width: 200px;
     height: 340px;
     background-color: blue;
     border-radius: 20px;
     margin-bottom: 12px;
 }
-#shortName{
-    margin: 0px auto;
+.shortName{
+    margin: 0 auto;
     width: 200px;
     color: white;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
 }
-#shortExplain{
+.shortName img{width: 5px;}
+.shortExplain{
     color: #999999;
     width: 200px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
-#shortShow{
+.shortShow{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -119,7 +123,7 @@
     color: white;
     position: absolute;
     left: 450px;
-    bottom: 0px;
+    bottom: 0;
     border: 1px solid #999999;
     cursor: pointer;
     z-index: 5;
@@ -131,7 +135,7 @@
     color: white;
     position: absolute;
     left: 450px;
-    bottom: 0px;
+    bottom: 0;
     border: 1px solid #999999;
     cursor: pointer;
     z-index: 5;
