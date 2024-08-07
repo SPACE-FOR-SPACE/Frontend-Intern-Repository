@@ -1,18 +1,20 @@
 
 //웹이 500px 이하로 줄었을때 검색 아이콘이 생긴다, 그 아이콘을 눌렀을때 생기는 검색창과 사라지는 다른 아이콘들 구현
+//검색창이 생길때
 document.getElementById("searchButton").addEventListener("click", function(){
     document.getElementById("bar").style.display = "block";
     document.getElementById("voice").style.display = "none";
-    document.getElementById("box1").style.display = "none";
+    document.getElementById("iconBox").style.display = "none";
     document.getElementById("searchButton").style.display = "none";
     List.style.display = "none";
     document.getElementById("logo").style.display = "none";
     document.getElementById("back").style.display = "block";
 });
+//검색창을 치울때
 document.getElementById("back").addEventListener("click", () => {
     document.getElementById("bar").style.display = "none";
     document.getElementById("voice").style.display = "flex";
-    document.getElementById("box1").style.display = "flex";
+    document.getElementById("iconBox").style.display = "flex";
     document.getElementById("searchButton").style.display = "block";
     List.style.display = "flex";
     document.getElementById("logo").style.display = "block";
@@ -45,15 +47,22 @@ const search = document.getElementById("search");
 
 //css 파일들을 교체하며 목록아이콘을 눌렀을때 사이드바가 줄어들었다 커졌다하며 영상의 크기도 달라진다.
 const List = document.getElementById("List");
+//사이드바를 클릭하여 youtube.css 의 아이디 youtubeStyle 의 상태에따라 바꾼다
 List.addEventListener("click", () =>{
-    const stylesheet = document.getElementById("stylebar");
-    const stylesheet2 = document.getElementById("stylebar2");
-    if(stylesheet.getAttribute('href') === 'style.css'){
-        stylesheet.setAttribute('href', 'style3.css');
-        stylesheet2.setAttribute('href', 'style4.css');
+    const youtubeStyle = document.getElementById("youtubeStyle");
+    const videoStyle = document.getElementById("videoStyle");
+    const sideStyle = document.getElementById("sideStyle");
+    const headerStyle = document.getElementById("headerStyle");
+    if(youtubeStyle.getAttribute('href') === 'css/youtube.css'){
+        youtubeStyle.setAttribute('href', 'css/youtube(side_v).css');
+        videoStyle.setAttribute('href', 'css/video(side_v).css');
+        sideStyle.setAttribute('href', 'css/sideBar(side_v).css');
+        headerStyle.setAttribute('href', 'css/nav(side_v).css');
     }
-    else {
-        stylesheet.setAttribute('href', 'style.css');
-        stylesheet2.setAttribute('href', 'style2.css');
+    else{
+        youtubeStyle.setAttribute('href', 'css/youtube.css');
+        videoStyle.setAttribute('href', 'css/video.css');
+        sideStyle.setAttribute('href', 'css/sideBar.css');
+        headerStyle.setAttribute('href', 'css/nav.css');
     }
 });

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" id="stylebar">
-    <link rel="stylesheet" href="style2.css" id="stylebar2">
-    <link rel="stylesheet" media="screen and (max-width:600px)" href="index.css">
+    <link rel="stylesheet" href="css/youtube.css" id="youtubeStyle">
+    <link rel="stylesheet" href="css/nav.css" id="headerStyle">
+    <link rel="stylesheet" href="css/sideBar.css" id="sideStyle">
+    <link rel="stylesheet" href="css/video.css" id="videoStyle">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="css/600px.css">
 </head>
 <body>
     <div id="container">
@@ -23,9 +25,7 @@
                 </article>
                 <div id="bar">
                     <form action="" id="search-box">
-                        <img src="img/Search--Streamline-Iconoir.png" id="search-in" alt="">
                         <label for="search"></label><input type="text" placeholder="검색" id="search">
-                        <img src="img/타자.png" id="taja" alt="">
                         <div id="button"><img src="img/Search--Streamline-Iconoir.png" alt=""></div>
                     </form>
                 </div>
@@ -34,7 +34,7 @@
                     <img src="img/voice.png" alt="">
                     <div id="subText-voice">검색</div>
                 </div>
-                <div id="box1">
+                <div id="iconBox">
                     <article class="bell">
                         <div id="video">
                             <img src="img/video.png" alt="">
@@ -194,7 +194,7 @@
             </article>
         </header>
         <article id="categori">
-            <p id="selectLatter">전체</p>
+            <p>전체</p>
             <p >게임</p>
             <p>음악</p>
             <p>믹스</p>
@@ -321,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="v one">
+                <div class="v lastVideo">
                     <div class="thumbnail">
                         <img src="" alt="">
                     </div>
@@ -340,7 +340,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="v two">
+                <div class="v lastVideo">
                     <div class="thumbnail">
                         <img src="" alt="">
                     </div>
@@ -477,9 +477,9 @@
             </section>
         </main>
     </div>
-    <script src="youtube.js"></script>
-<script src="shortAnimation.js"></script>
-<script src="headHover.js"></script>
+    <script src="js/youtube.js"></script>
+<script src="js/shortAnimation.js"></script>
+<script src="js/headHover.js"></script>
 </body>
 
 </html>

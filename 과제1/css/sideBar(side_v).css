@@ -1,0 +1,85 @@
+#sideBar{
+    width: 45px;
+    height: 750px;
+    overflow-y: auto;
+}
+#sideBar div{
+    color: white;
+    font-size: 14px;
+}
+.home-text{
+    color: white;
+    text-align: center;
+}
+#home div img{width: 25px}
+.short{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.short:hover{
+    background-color: #2D2D2D;
+    transition: 0.2s;
+
+}
+.short img{width: 25px;}
+.short div img{width: 25px;}
+#like{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#like:hover{
+    background-color: #2D2D2D;
+    transition: 0.2s;
+
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    background-color: rgb(81, 81, 81);
+}
+.me{
+    padding: 16px;
+}
+.outline{padding: 20px 10px 10px 5px;}
+.outline a{
+    color: rgb(212, 212, 212);
+    font-size: 13px;
+    text-decoration-line: none;
+}
+.outline2{
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+}
+#outline2 span a{color: blue;}
+#sideBar::-webkit-scrollbar {
+    width: 10px;
+}
+#sideBar::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+#sideBar.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/*sideBar 에서 숨겨진항목들*/
+#ll{display: none;}
+#ff{display: none;}
+#you{display: none;}
+#setting{display: none;}
+#dd{display: none;}
+.hr{display: none;}
+#my{display: none;}
