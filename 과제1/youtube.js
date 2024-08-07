@@ -1,29 +1,5 @@
-document.getElementById("voice").addEventListener("mouseover", function(){
-    document.getElementById("subText-voice").style.display = "block";
-});
-document.getElementById("voice").addEventListener("mouseleave", function(){
-    document.getElementById("subText-voice").style.display = "none";
-});
-document.getElementById("alarm").addEventListener("mouseover", function(){
-    document.getElementById("subText-bell").style.display = "block";
-});
-document.getElementById("alarm").addEventListener("mouseleave", function(){
-    document.getElementById("subText-bell").style.display = "none";
-});
 
-document.getElementById("video").addEventListener("mouseover", function(){
-    document.getElementById("subText-video").style.display = "block";
-});
-document.getElementById("video").addEventListener("mouseleave", function(){
-    document.getElementById("subText-video").style.display = "none";
-});
-
-document.getElementById("searchButton").addEventListener("mouseover", function(){
-    document.getElementById("subText-search").style.display = "block";
-});
-document.getElementById("searchButton").addEventListener("mouseleave", function(){
-    document.getElementById("subText-search").style.display = "none";
-});
+//웹이 500px 이하로 줄었을때 검색 아이콘이 생긴다, 그 아이콘을 눌렀을때 생기는 검색창과 사라지는 다른 아이콘들 구현
 document.getElementById("searchButton").addEventListener("click", function(){
     document.getElementById("bar").style.display = "block";
     document.getElementById("voice").style.display = "none";
@@ -42,6 +18,9 @@ document.getElementById("back").addEventListener("click", () => {
     document.getElementById("logo").style.display = "block";
     document.getElementById("back").style.display = "none";
 });
+
+
+//사이드바의 스크롤바가 일정시간후에 사라진다는것을 구현
 const sideBar = document.getElementById("sideBar");
 let isScrolling;
 sideBar.addEventListener("mouseover", ()=> {
@@ -62,28 +41,9 @@ sideBar.addEventListener("mouseleave", ()=> {
 
 const search = document.getElementById("search");
 
-const line = document.getElementById("line-in");
-line.addEventListener("click", ()=>{
-    line2.style.display = "block";
-    line.style.display = "none";
-    document.getElementById("shortShow").style.height = "1000px";
-    document.getElementById("shortShow").style.transition = "0.5s";
-    line2.style.bottom = "-520px";
-    document.getElementById("line").style.bottom = "-500px";
-})
-
-const line2 = document.getElementById("line-in2");
-
-line2.addEventListener("click", () =>{
-    line2.style.display = "none";
-    line.style.display = "block";
-    document.getElementById("shortShow").style.height = "400px";
-    line.style.transition = "0.5s";
-    line.style.bottom = "0px";
-    document.getElementById("line").style.bottom = "20px";
-})
 
 
+//css 파일들을 교체하며 목록아이콘을 눌렀을때 사이드바가 줄어들었다 커졌다하며 영상의 크기도 달라진다.
 const List = document.getElementById("List");
 List.addEventListener("click", () =>{
     const stylesheet = document.getElementById("stylebar");
