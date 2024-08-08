@@ -4,21 +4,21 @@
 #mainShort{
     display: none;
 }
-#vedios{
+#videos{
     width: 450px;
     left: 20px;
 }
-#v{
+.v{
     width: 450px;
 }
-#thumbnail{
+.thumbnail{
     width: 450px;
     height: 260px;
 }
-#box1{
+#iconBox{
     right: 900px;
 }
-#serch{
+#search{
     width: 300px;
 }
 #bar{
@@ -28,7 +28,7 @@
 #voice{
     left: 280px;
 }
-#serchButton{
+#searchButton{
     position: absolute;
     left: 230px;
     display: block;
@@ -38,10 +38,10 @@
     border-radius: 100px;
     padding: 8px;
 }
-#serchButton:hover{
+#searchButton:hover{
     background-color: rgb(63, 63, 63);
 }
-#serchButton img{
+#searchButton img{
     width: 25px;
 }
 #back{

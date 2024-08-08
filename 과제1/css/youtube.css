@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    z-index: 5;
+}
+#container{
+    margin-left: 10px;
+}
+body{
+    background-color: black;
+}
+#back{
+    display: none;
+}
+#categori{
+    position: fixed;
+    width: 1140px;
+    height: 40px;
+    right: 30px;
+    margin-top: 10px;
+    padding-top: 60px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 4;
+}
+#categori p{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(43, 43, 43);
+    padding: 10px 13px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+#categori > p:nth-of-type(1){
+    background-color: white;
+    color: black;
+}

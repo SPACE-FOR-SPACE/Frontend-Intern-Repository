@@ -1,25 +1,9 @@
-/*header css*/
-
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-    position: fixed;
-    z-index: 5;
-}
-#container{
-    margin-left: 10px;
-}
-body{
-    background-color: black;
-}
 nav{
     height: 60px;
     display: flex;
     align-items: center;
     position: relative;
-    top: 0px;
+    top: 0;
     width: 1400px;
     background-color: black;
     z-index: 5;
@@ -31,18 +15,20 @@ nav article{
     display: flex;
     width: 15px;
     height: 10px;
-    padding: 17px 13.5px 17px 13px;
+    padding: 17px 13px 17px 13px;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
 }
+#List img{width: 20px}
 #List:hover{background: #2D2D2D; cursor: pointer;transition: 0.3s;}
 #List:active{background-color: #4e4e4e;}
-#serch-bar{
+#search-bar{
     width: 500px;
     height: 30px;
 }
-#serch{
+#logo img{width: 120px}
+#search{
     width: 500px;
     height: 30px;
     font-size: 14px;
@@ -52,7 +38,7 @@ nav article{
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     padding: 5px 10px;
-    margin: 0px;
+    margin: 0;
 }
 #bar{
     position: fixed;
@@ -70,10 +56,11 @@ nav article{
     border-radius: 100px;
     width: 40px;
     height: 40px;
-    background: #333333; 
+    background: #333333;
     position: absolute;
     left: 1000px;
 }
+#voice img{width:15px;}
 #voice:hover{
     background-color: #4e4e4e;
     cursor: pointer;
@@ -86,7 +73,7 @@ nav article{
     border-radius: 100px;
     width: 40px;
     height: 40px;
-    
+
 }
 #alarm:hover{background-color: #2d2d2d;cursor: pointer;transition: 0.3s;}
 #video{
@@ -96,7 +83,7 @@ nav article{
     border-radius: 100px;
     width: 40px;
     height: 40px;
-    
+
 }
 #video:hover{background-color: #2d2d2d;cursor: pointer;transition: 0.3s;}
 .profile{
@@ -105,22 +92,23 @@ nav article{
     border-radius: 100px;
     background-color: lightblue;
 }
-#box1{
+#iconBox{
     width: 180px;
     display: flex;
     justify-content: space-around;
     position: absolute;
-    right: 0px;
+    right: 0;
 }
-#serchButton{
+#searchButton{
     display: none;
 }
-#serch-box{
+#search-box{
     width: 600px;
     display: flex;
     flex-direction: row;
     height: 40px;
 }
+
 #button{
     width: 40px;
     border-top-right-radius: 20px;
@@ -136,7 +124,7 @@ nav article{
 #button img{
     width: 20px;
 }
-#bell{
+.bell{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,12 +141,9 @@ nav article{
     bottom: -25px;
     text-align: center;
     display: none;
-    right: 0px;
+    right: 0;
 }
-#back{
-    display: none;
-}
-#subText-serch{
+#subText-search{
     color: white;
     background-color: gray;
     border-radius: 10px;
@@ -168,7 +153,7 @@ nav article{
     position: absolute;
     bottom: -25px;
     text-align: center;
-    right: 0px;
+    right: 0;
     display: none;
 }
 #subText-video{
@@ -182,7 +167,7 @@ nav article{
     bottom: -25px;
     text-align: center;
     display: none;
-    right: 0px;
+    right: 0;
 }
 #subText-bell{
     color: white;
@@ -195,139 +180,5 @@ nav article{
     bottom: -25px;
     text-align: center;
     display: none;
-    right: 0px;
-}
-#sideBar{
-    width: 215px;
-    height: 750px;
-    overflow-y: auto;
-    background-color: black;
-}
-#sideBar div{
-    color: white;
-    font-size: 14px;
-}
-#home{
-    display: flex;
-    align-items: center;
-    width: 175px;
-    height: 30px;
-    padding: 5px 10px;
-    background-color: #2D2D2D;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#home:hover{
-    background-color:#3f3f3f;
-    transition: 0.2s;
-    
-}
-#home-text{
-    color: white;
-    margin-left: 20px;
-}
-#short{
-    display: flex;
-    align-items: center;
-    width: 175px;
-    height: 30px;
-    padding: 5px 10px;
-    background-color: #000000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#short:hover{
-    background-color: #2D2D2D;
-    transition: 0.2s;
-    
-}
-#like{
-    display: flex;
-    align-items: center;
-    width: 175px;
-    height: 30px;
-    padding: 5px 10px;
-    background-color: #000000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#like:hover{
-    background-color: #2D2D2D;
-    transition: 0.2s;
-    
-}
-#hr{
-    width: 100%;
-    height: 1px;
-    margin-top: 10px;
-    background-color: rgb(81, 81, 81);
-}
-#me{
-    padding: 16px;
-}
-#outline{padding: 20px 10px 10px 5px;}
-#outline a{
-    color: rgb(212, 212, 212);
-    font-size: 13px;
-    text-decoration-line: none;
-}
-#outline2{
-    color: gray;
-    font-size: 12px;
-    line-height: 18px;
-}
-#outline2 span a{color: blue;}
-#sideBar::-webkit-scrollbar {
-    width: 10px;
-}
-#sideBar::-webkit-scrollbar-thumb {
-    background-color: #6b6b6b;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
-}
-#sideBar.hide-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-#taja{
-    position: absolute;
-    width: 40px;
-    right: 120px;
-    top: 8px;
-    cursor: pointer;
-}
-#serch-in{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    left: -30px;
-    display: none;
-}
-#categori{
-    position: fixed;
-    width: 1140px;
-    height: 40px;
-    right: 30px;
-    margin-top: 10px;
-    padding-top: 60px;
-    padding-left: 5px;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    z-index: 4;
-}
-#categori p{
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: rgb(43, 43, 43);
-    padding: 10px 13px;
-    text-align: center;
-    border-radius: 10px;
-    margin-right: 15px;
-}
-#selectLatter{
-    background-color: white;
-    color: black;
+    right: 0;
 }
